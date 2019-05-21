@@ -1,0 +1,1 @@
+nodemon -L --watch server.js --watch utils --watch controllers --watch services --watch models --watch test server.js
