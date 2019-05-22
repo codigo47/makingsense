@@ -12,6 +12,27 @@ How to run the tests
 ```bash
 $ docker exec -it app /bin/bash
 $ mocha test
+
+  Post
+    PostModel
+      model validateNew()
+        ✓ should not allow an empty title
+        ✓ should not allow an empty post
+        ✓ should not allow an wrong state
+      model validateList()
+        ✓ should allow an empty post object
+        ✓ should not allow an empty title
+      model validateDelete()
+        ✓ should not allow IDs with less than 24 chars
+    PostController
+      /posts
+        ✓ should get a unauthorized error
+        ✓ should create a new post
+    PostController
+      ✓ should create, list and delete a post
+
+
+  9 passing (93ms)
 ```
 
 Endpoints
