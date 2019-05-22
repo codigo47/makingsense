@@ -1,4 +1,4 @@
-# makingsense
+# makingsense blog API
 
 How to Install the blog backend
 
